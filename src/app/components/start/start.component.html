@@ -75,11 +75,18 @@
 
 <input
   id="inputFilePhoto"
+  class="inp-file"
   type="file"
   accept=".png, .jpg"
   (change)="changeUploadPhoto()"
 />
-<input id="inputFileCV" type="file" accept=".pdf" (change)="changeUploadCV()" />
+<input
+  id="inputFileCV"
+  class="inp-file"
+  type="file"
+  accept=".pdf"
+  (change)="changeUploadCV()"
+/>
 
 <!-- Modal -->
 <div
