@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/softion-ui-cv-curso",
+    "public": "dist/softion-ui-cv-curso/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
