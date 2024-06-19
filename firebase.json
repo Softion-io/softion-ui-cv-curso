@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/softion-ui-cv-curso",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

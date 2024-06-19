@@ -25,3 +25,24 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+ng new nombreProyecto
+npm install bootstrap bootstrap-icons
+npm install @ng-bootstrap/ng-bootstrap@next
+
+
+agregar en angular.json
+
+"styles": [
+  "node_modules/bootstrap/scss/bootstrap.scss",
+  "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+  "src/styles.scss"
+],
+"scripts": [
+  "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+]
+
+
+crear componentes
+ng g c components/login --standalone
