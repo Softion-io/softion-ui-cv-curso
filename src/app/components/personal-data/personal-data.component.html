@@ -11,7 +11,9 @@
   <tbody>
     <tr>
       <td>Nombre</td>
-      <td>{{ dataForm.name }}</td>
+      @if (!isAdmin) {
+        <td>{{ dataForm.name }}</td>
+      }
       @if (isAdmin) {
       <td>
         <input
@@ -26,7 +28,9 @@
     </tr>
     <tr>
       <td>Apellidos</td>
-      <td>{{ dataForm.lastName }}</td>
+      @if (!isAdmin) {
+        <td>{{ dataForm.lastName }}</td>
+      }
       @if (isAdmin) {
       <td>
         <input
@@ -41,7 +45,9 @@
     </tr>
     <tr>
       <td>Fecha de nacimiento</td>
-      <td>{{ dataForm.birthday }}</td>
+      @if (!isAdmin) {
+        <td>{{ dataForm.birthday }}</td>
+      }
       @if (isAdmin) {
       <td>
         <input
@@ -56,7 +62,9 @@
     </tr>
     <tr>
       <td>Correo electrónico</td>
-      <td>{{ dataForm.email }}</td>
+      @if (!isAdmin) {
+        <td>{{ dataForm.email }}</td>
+      }
       @if (isAdmin) {
       <td>
         <input
@@ -71,7 +79,9 @@
     </tr>
     <tr>
       <td>Nacionalidad</td>
-      <td>{{ dataForm.nationality }}</td>
+      @if (!isAdmin) {
+        <td>{{ dataForm.nationality }}</td>
+      }
       @if (isAdmin) {
       <td>
         <input
@@ -86,7 +96,9 @@
     </tr>
     <tr>
       <td>Posición</td>
-      <td>{{ dataForm.job }}</td>
+      @if (!isAdmin) {
+        <td>{{ dataForm.job }}</td>
+      }
       @if (isAdmin) {
       <td>
         <input
@@ -101,7 +113,9 @@
     </tr>
     <tr>
       <td>Disponibilidad para viajar</td>
-      <td>{{ dataForm.availabilityToTravel }}</td>
+      @if (!isAdmin) {
+        <td>{{ dataForm.availabilityToTravel }}</td>
+      }
       @if (isAdmin) {
       <td>
         <input
